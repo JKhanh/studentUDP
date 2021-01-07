@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:25:p, par t {par l:t {comp label5:::p::p, par l:l::p {seq l {comp label3:::p:34:p, space :p:59:p, comp txtClassYear:::::x}, seq l {comp label2:::p::p, space :p:35:p, comp txtBirth:::p:191:p}, comp label1::l:p::p, seq l {par l {comp btnBack:::p::p, comp label4:::p::p}, par l {seq {space :::x, comp txtAddress:::p:191:p}, seq l {space :p:90:p, comp btnUpdate:::p::p}}}}}, par l:t {comp txtId:::p::p, comp txtName:::p:191:p}}, space ::89:x}}"
+			"$verticalGroup": "par l {seq l {space :p:17:p, par b {comp label5::b:p::p, comp txtId::b:p::p}, space s:::p, par b {comp label1::b:p::p, comp txtName::b:p::p}, par l {seq l {space :p:23:p, comp label2:::p::p}, seq l {space s:::p, comp txtBirth:::p::p}}, space s:::p, par b {comp label3::b:p::p, comp txtClassYear::b:p::p}, space :p:26:p, par b {comp txtAddress::b:p::p, comp label4::b:p::p}, space s:::p, par b {comp btnUpdate::b:p::p, comp btnBack::b:p::p}, space ::11:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Ten"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtName"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtBirth"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Ngay Sinh"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtAddress"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Khoa"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtClassYear"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Que Quan"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "ID"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtId"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnUpdate"
+				"text": "Update"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnUpdateMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnBack"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnBackMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 335 )
+		} )
+	}
+}
